@@ -1,0 +1,168 @@
+/* BASE */
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  background: #e7ddcf;
+  color: #111;
+}
+
+/* HERO CON IMAGEN */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 2rem;
+}
+
+.hero-image {
+  background:
+    linear-gradient(rgba(231,221,207,0.88), rgba(231,221,207,0.88)),
+    url("img/hero-bakery.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 760px;
+}
+
+.hero-content h1 {
+  font-size: 4.5rem;
+  letter-spacing: 0.35em;
+  margin-bottom: 2.5rem;
+}
+
+.hero-content p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 3rem;
+  padding: 0.9rem 2.8rem;
+  background: #7a4a2e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 40px;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+}
+
+/* MANIFESTO */
+.manifesto {
+  padding: 7rem 2rem;
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.manifesto h2 {
+  margin-bottom: 2rem;
+  letter-spacing: 0.15em;
+}
+
+.manifesto p {
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 7rem 2rem;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 4.5rem;
+  letter-spacing: 0.15em;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* CARD PREMIUM */
+.card {
+  background: #f4eee6;
+  border-radius: 28px;
+  padding: 3.5rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  max-width: 230px;
+  margin: 0 auto 2rem;
+  display: block;
+}
+
+.card p {
+  letter-spacing: 0.12em;
+  margin-bottom: 1.5rem;
+}
+
+.card-btn {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: #7a4a2e;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.contact a {
+  display: block;
+  margin: 0.8rem 0;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 0.08em;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero {
+    padding: 5rem 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    letter-spacing: 0.25em;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .grid {
+    gap: 2.5rem;
+  }
+}
